@@ -178,7 +178,7 @@
 	  	              <td align="center" width=800px">
 	  					<center>
 							  <span style="font-size:18px"><sup>2</sup>
-								Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, China
+								Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, China
 							</span>
 		  		  		</center>
 		  	      </td>
@@ -262,9 +262,84 @@ reconstruction of floor-level lines. Quantitative and qualitative
 evaluations conducted on assorted facades in existing datasets
 and street views from Google demonstrate the effectiveness of
 our approach. Also, we present context-aware image overlay
-results and show the potentials of our approach in enrich-
-ing AR-related applications.
+results and show the potentials of our approach in enriching AR-related applications.
 		<br><br><hr>
+
+		<center><h1>Overview</h1></center>
+		Our two-stage approach: (i) FloorLevel-Net is a multi-task learning network that segments the input image into building-facade-wise semantic regions
+		(top) and floor-level distributions (bottom); and (ii) our method further fits and refines the pixel-wise network outputs into polylines with geometric parameters.
+		Further, we can take the reconstructed floor-level lines to support and enrich urban AR applications with floor-aware image overlay.
+  		    <table align="center" width="900px">
+  			<tbody>
+  			  	<tr>
+  			  		<td align="center"><img class="round" style="width:1000px" src="./figures/overview.png"></td>	
+			  	</tr>
+			  	<!-- <tr>
+			  		<td align="center"><h3>Pipeline of EC-Net</h3></td>
+			  	</tr> -->
+			</tbody>
+			</table>
+			
+			<br>
+
+			<!-- <table align="center" width="900px">
+  			<tbody>
+  			  	<tr>
+  			  		<td align="center"><img class="round" style="width:700px" src="./figures/up&down.png"></td>	
+			  	</tr>
+			  	<tr>
+			  		<td align="center"><h3>Patches Extraction</h3></td>
+			  	</tr>
+
+			</tbody>
+			</table> -->
+		 
+
+  		  <!-- <center>
+				<span style="font-size:28px"><a href="https://github.com/liruihui/PU-GAN">[GitHub]</a>
+			  <br>
+			  </span></center>
+		  <br> -->
+
+		  <hr>
+
+		  <center><h1>Qualitative comparison results<br></h1></center>
+		 The results illustrate the effects of (i) our data augmentation
+		 scheme by comparing DeeplabV3+ models trained on CMP and on our training data (green background), (ii) multi-task learning with and without the height-
+	     attention mechanism (red background), and (iii) our full method further with geometry post-processing (yellow background), vs. the ground truths (GT).
+  		<br><br>
+  		<table align="center" width="600px">
+			  <tbody><tr>
+				  <td><span style="font-size:24pt"><center>
+				  	<img class="paper-big" style="width:1000px" src="./figures/result_1.png">
+  	              </center></span></td>
+              </tr>
+  		</tbody></table> 
+  		
+  		<!-- <center>
+  			<br>
+  			<span style="font-size:28px"><a href="./moreresult.html">[More results]</a>
+			<br>
+			</span>
+		</center> -->
+
+
+ 		<center><h1>AR overlaying results<br></h1></center>
+		The potential of our approach to support and enrich various AR scenarios, e.g., navigation, advertisement, etc.
+		<br><br>
+  	
+  		<table align="center" width="600px">
+			  <tbody><tr>
+				  <td><span style="font-size:24pt"><center>
+				  	<img class="paper-big" style="width:1000px" src="./figures/result_ar.png">
+  	              </center></span></td>
+              </tr>
+  		</tbody></table> 
+
+  		<br>
+		  <br>
+		  
+		<hr>
 
 	
 
